@@ -1,0 +1,37 @@
+
+        >>> Info <<<
+
+**************************************************************
+
+ГАЙД: Node & Notion & Telegram. Деплой и обновление на Ubuntu
+https://www.youtube.com/watch?v=jXmsjFUY3sE
+
+Started:    19.09.2023
+
+*********************************************************
+
+    ** Run App **
+
+$   npm start           // http://localhost:3000/
+
+*********************************************************
+
+    ** Install **
+
+$   npm init -y
+$   npm i -D nodemon        // Авто перезагрузка при внесении изменений
+$   npm i config openai telegraf @notionhq/client
+
+config  - Для переменных
+openai  - Работа с gptChat
+telegraf    - Работа с Телеграм ботом
+@notionhq/client    - A simple and easy to use client for the Notion API
+
+
+    ** Setup **
+
+Add `"main": "index.js"` in package.json
+
+Add script `"start": "node ./src/main.js"` and `dev` in package.json
+
+*********************************************************
